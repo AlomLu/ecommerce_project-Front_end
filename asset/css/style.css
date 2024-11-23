@@ -36,22 +36,53 @@ ul{
     padding: 10px 21px;
     transition: .9s;
 }
+.navbar .container-fluid ul li.nav-item {
+    margin-right: 10px;
+}
 .navbar .container-fluid ul li:last-of-type {
-    margin-left: 10px;
+    margin-right: 0px;
 }
 .navbar .container-fluid ul li a:hover {
     border: 0 solid #e5e5e5;
 	background: #ddd;
 }
 .nav-item {
-    padding-top: 6px;
+    /* padding-top: 6px; */
 }
-.nav-item a i {
+.navbar .container-fluid ul li a i {
 	color: black;
+}
+.navbar .container-fluid ul li:last-of-type a i {
 	margin-right: 10px;
 }
 .nav-item a span {
 	color: black;
 	font-size: 16px;
 }
+.navlink {
+    padding: 0;
+}
+.navlink .container-fluid{
+    background-color: #fff;
+    padding: 10px 0px;
+}
+.navlink .container-fluid ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+    /* transition: .9s; */
+}
+.navlink .container-fluid ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
 /* Header area end */
+
+/* carousel area start */
+.carousel button.carousel-control-next span.carousel-control-next-icon {
+    background-color: red;
+}
+.carousel button.carousel-control-prev span.carousel-control-prev-icon {
+    background-color: red;
+}
+/* carousel area end */
