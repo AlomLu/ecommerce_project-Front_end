@@ -9,6 +9,13 @@ a{
 ul{
     list-style: none;
 }
+h3, h4{
+    margin-bottom: 0;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
 
 /* Header area start */
 .navbar .container-fluid form .form-control:focus {
@@ -79,6 +86,10 @@ ul{
 /* Header area end */
 
 /* carousel area start */
+.carousel .carousel-inner .carousel-item img{
+    height: 400px;
+    object-fit: cover;
+}
 .carousel button.carousel-control-next span.carousel-control-next-icon {
     background-color: red;
 }
@@ -86,3 +97,74 @@ ul{
     background-color: red;
 }
 /* carousel area end */
+
+/* category area start */
+.categories{
+    
+}
+.categories h3 {
+	padding: 20px 0 30px 0;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.categories .image{
+    position: relative;
+}
+.categories .image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    /* transition: .9s; */
+}
+.categories .image:hover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.categories .image a img {
+	height: 175px;
+	width: 100%;
+	/* object-fit: cover; */
+	/* display: block; */
+	background-size: contain;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	border: 2px solid #000;
+}
+.categories .image-content {
+	text-align: center;
+	/* position: absolute; */
+	/* bottom: 10px; */
+	/* left: 10px; */
+	/* background-color: rgba(0, 0, 0, 0.6); */
+	/* color: white; */
+	/* padding: 5px 5px; */
+	/* border-radius: 5px; */
+	bottom: 0%;
+	left: 50%;
+	/* transform: translateX(-50%); */
+	width: 100%;
+    margin: 10px 0px 30px 0px;
+}
+.categories .image-content a {
+	color: #000;
+	text-transform: capitalize;
+    background-color: #FF7F50;
+	display: block;
+	color: #000;
+	transition: .9s;
+	padding: 5px 0;
+    font-weight: bold;
+}
+.categories  .image-content a:hover{
+	background: #DE3163;
+    color: #fff;
+}
+
+.categories .image-content span{}
+/* category area end */
