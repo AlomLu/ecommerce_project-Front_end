@@ -79,6 +79,9 @@ p{
     background-color: #fff;
     padding: 10px 0px;
 }
+.navlink .container-fluid ul li a{
+    text-transform: capitalize;
+}
 .navlink .container-fluid ul li ul{
     visibility: hidden;
     opacity: 0;
@@ -202,6 +205,96 @@ p{
 	font-size: 16px;
 }
 /* Choose area end */
+
+/* Product List area start */
+.product-list{
+    margin: 50px 0px 40px 0px;
+}
+.product-list .single-product{}
+.product-list .single-product{
+	margin-bottom: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.product-list .single-product .image{
+    position: relative;
+
+}
+
+.product-list .single-product .secondary-imgae{}
+.product-list .single-product .secondary-imgae {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.product-list .single-product .secondary-imgae:hover{
+    opacity: 1;
+}
+.product-list .single-product .secondary-imgae img{}
+
+.product-list .single-product .image img, .product-list .single-product .secondary-imgae img {
+	padding: 58px;
+    transition: transform 0.3s ease
+}
+.product-list .single-product .image img:hover{
+    transform: scale(1.4);
+}
+.product-list .single-product .add-cart {
+    text-align: center;
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    transform: translateY(100%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+.product-list .single-product:hover .add-cart{
+    opacity: 1;
+    transform: translateY(0); 
+    
+}
+
+/* .product-list .single-product .add-cart:hover::before{
+    visibility: visible;
+} */
+.product-list .single-product .add-cart a {
+    background: rgba(28, 31, 41, 0.9);
+	color: #fff;
+	text-transform: capitalize;
+	display: block;
+	padding: 8px 0px;
+    transition: .9s;
+}
+.product-list .single-product .add-cart a:hover{
+    background-color: tomato;
+    color: #000;
+}
+.product-list .product-content {
+	text-align: center;
+	padding: 40px 0px 10px 0px;
+}
+.product-list .product-content a{
+    color: #000;
+    transition: .9s;
+}
+.product-list .product-content a:hover{
+    color: tomato;
+}
+.product-list .product-content h4 {
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.product-list .product-content span {
+	font-size: 19px;
+	font-weight: bold;
+}
+.product-list .product-content span i{}
+/* Product List area end */
 
 /* Footer area start */
 .about-area{}
