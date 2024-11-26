@@ -296,6 +296,97 @@ p{
 .product-list .product-content span i{}
 /* Product List area end */
 
+/* Product Details area end */
+.product-details {
+	padding: 50px 0px;
+}
+.product-details .image {
+	padding: 0px 84px 70px 70px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.product-details .image img{}
+.product-details .product-content{
+    padding-left: 30px;
+}
+.product-details .product-content h3, h5 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.product-details .product-content h5{}
+.product-details .product-content span {
+	font-weight: bold;
+	margin-bottom: 15px;
+	display: block;
+	font-size: 16px;
+}
+.product-details .product-content span i{}
+.product-details .product-content .product-description {
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+.product-details .product-content .product-description ul {
+	padding-left: 15px;
+}
+.product-details .product-content .product-description ul li {
+	list-style: square;
+	font-size: 16px;
+	font-style: oblique;
+}
+.product-details .product-content .add-to-cart {
+	text-align: center;
+	margin-top: 20px;
+}
+.product-details .product-content .add-to-cart .quantity {
+	padding: 7px 0px;
+	background: #65676d;
+	width: 40%;
+	float: left;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+.product-details .product-content .add-to-cart .quantity input[type="button"] {
+    background: #65676d;
+    color: #fff;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.product-details .product-content .add-to-cart .quantity input[type="button"]:hover {
+    background: #d22b0f;
+    color: #fff;
+}
+
+.product-details .product-content .add-to-cart .quantity input[type="number"] {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+.product-details .product-content .add-to-cart a {
+	background: #65676d;
+	padding: 10px 0px;
+	display: block;
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	transition: .9s;
+	width: 55%;
+	float: right;
+}
+.product-details .product-content .add-to-cart a:hover{
+    background-color: #d22b0f;
+}
+/* Product Details area end */
+
 /* Footer area start */
 .about-area{}
 .single-box{}
