@@ -59,9 +59,109 @@ p{
     border: 0 solid #e5e5e5;
 	background: #ddd;
 }
-.nav-item {
-    /* padding-top: 6px; */
+.navbar .container-fluid ul li a:hover i{
+    color: red;
 }
+.navbar .container-fluid ul li a:hover span{
+    color: red;
+}
+.nav-item {
+    position: relative;
+}
+.nav-item .cart {
+    
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px;
+    min-height: fit-content;
+    max-height: 800px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 10;
+    transition: opacity 0.9s ease;
+}
+
+.nav-item:hover .cart {
+    opacity: 1;
+    /* display: block; */
+    /* visibility: visible; */
+    pointer-events: auto; 
+}
+.cart .image{}
+.cart .image a {
+	padding: 0px !important;
+}
+.cart .image a img{}
+.cart .product-info{}
+.cart .product-info ul{}
+.cart .product-info ul li:last-of-type{font-weight: bold;}
+.cart .product-info ul li a {
+	padding: 0 !important;
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #000;
+}
+.cart .product-info ul li a:hover{
+    background-color: #fff;
+    color: #d22b0f;
+}
+.navbar .container-fluid ul li .cart .image a:hover {
+    background-color: #fff;
+}
+.navbar .container-fluid ul li .cart .delete a:hover {
+    background-color: #fff;
+}
+.cart .product-info ul li i{}
+.cart .price{}
+.cart .price span {
+	font-weight: bold;
+}
+.cart .delete{}
+.cart .delete a{}
+.cart .delete a i{}
+.total-price {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0px;
+	margin: 15px 0px;
+}
+.total-price p{
+    text-transform: uppercase;
+}
+.total-price span{
+    font-weight: bold;
+}
+
+.cart-actions{
+    padding: 15px 0px;
+    position: relative;
+}
+.cart-actions a{
+    background: #2B2D42;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+.navbar .container-fluid ul li .cart-actions a:hover{
+    background-color: #d22b0f;
+}
+
+.cart-actions .checkout a{}
+.cart-actions .clear-all a{}
+/* .nav-item:hover .cart, .nav-item .nav-link:hover + .cart {
+    opacity: 1;
+} */
+
+
 .navbar .container-fluid ul li a i {
 	color: black;
 }
