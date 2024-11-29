@@ -773,23 +773,23 @@ th{
     align-items: center;
     height: 100vh;
 }
-.card {
+.forget-pass .card {
     width: 40%;
 }
 .card-body{
 }
-.card-title {
+.forget-pass .card-title {
 	border-bottom: 1px solid #ddd;
 	padding: 30px 0px;
 	margin-bottom: 0;
 }
-.card-text {
+.forget-pass .card-text {
 	padding: 30px 0px;
 	border-bottom: 1px solid #ddd;
 }
 .forget-pass .card input {
 	margin: 30px 0px;
-	padding: 5px 0px 5px 2px;
+	padding: 10px 0px 10px 2px;
 }
 .forget-pass .card input.form-control:focus{
     outline: none;
@@ -797,20 +797,59 @@ th{
 	border-color: #2B2D42;
     transition: all 0.3s ease;
 }
-.btn-group{
+.forget-pass .btn-group{
     float: right;
     padding-bottom: 40px;
 }
-.btn-group .btn.cancel {
+.forget-pass .btn-group .btn.cancel {
 	margin-right: 10px;
 	padding: 5px 20px;
 	border-radius: 4px !important;
 }
-.btn-group .btn.search{
+.forget-pass .btn-group .btn.search{
     padding: 5px 20px;
     border-radius: 4px;
 }
 /* Forget-pass area end */
+
+/* Signup area start */
+.signup-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 0px;
+}
+.signup-area .card{
+    width: 50%;
+}
+.signup-area .card-title{
+    padding: 20px 0px;
+    text-align: center;
+}
+.signup-area .gender{
+    margin-right: 10px;
+}
+.signup-area .form-group{
+    margin-bottom: 25px;
+}
+.signup-area .birthday, .division, .district, .upazila, .union-parishad{
+    width: 40%;
+}
+.signup-area input[type="submit"]{
+    margin-bottom: 20px;
+}
+.signup-area .have-an-account {
+	text-align: center;
+}
+.signup-area .have-an-account a {
+	color: #000;
+	padding: 5px 0px;
+    transition: .9s;
+}
+.signup-area .have-an-account a:hover{
+    color: #d22b0f;
+}
+/* Signup area end */
 
 /* Footer area start */
 .about-area{}
