@@ -698,11 +698,15 @@ th{
 	color: rgba(0, 0, 0, 0.56);
 	font-size: 12px;
 }
+
 .payment p {
 	color: #000;
 	font-size: 16px;
-	/* line-height: 61px; */
 	font-style: italic;
+}
+.payment p a{
+	color: #000;
+    text-decoration: underline;
 }
 .place-order{}
 .place-order input[type="submit"] {
@@ -722,14 +726,54 @@ th{
 }
 /* checkout area end */
 
+/* Login area start */
+.login-area {
+	padding: 100px 0px 100px 0px;
+}
+.login {
+	border: 1px solid #ddd;
+	width: 40%;
+	margin: 0 auto;
+	padding: 30px 20px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.login h4{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.login .form-inline {
+	margin-bottom: 25px;
+}
+.login .form-inline input[type="submit"]{
+    margin-top: 5px;
+}
+.forgot-pass {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.forgot-pass a, .create-account a {
+	padding: 3px 0;
+	color: #000;
+    transition: .9s;
+}
+.forgot-pass a:hover, .create-account a:hover{
+    color: #d22b0f;
+}
+.create-account {
+	text-align: center;
+}
+/* Login area end */
+
 /* Footer area start */
 .about-area{}
 .single-box{}
 .single-box h4 {
 	text-transform: uppercase;
 	margin-bottom: 15px;
-	/* border-left: 1px solid tomato; */
-	padding-left: 5px;
+	padding-left: 0px;
+	font-size: 20px;
 }
 .single-box ul{}
 .single-box ul li {
