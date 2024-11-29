@@ -23,6 +23,15 @@ ul{
 p{
     margin-bottom: 0;
 }
+label {
+	margin-bottom: 2px;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+th{
+    text-transform: capitalize;
+    font-size: 15px;
+}
 /* Header area start */
 .navbar .container-fluid form .form-control:focus {
 
@@ -607,6 +616,111 @@ p{
 
 .cart-actions a.continue-shopping{}
 /* View Cart area end */
+
+/* checkout area start */
+.checkout-area {
+	padding: 30px 0px 55px 0px;
+}
+.billing-address, .order-area {
+	border: 1px solid #ddd;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.billing-address h4, .order-area h4 {
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.form-group {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.form-inline .form-control:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #2B2D42;
+    transition: all 0.3s ease;
+}
+.order-area{}
+.checkout-review-order {
+	background: #F9F9F9;
+	padding: 20px;
+}
+.checkout-review-order p{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.checkout-review-order p.model-name {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: rgba(0, 0, 0, 0.56);
+}
+.checkout-review-order .product-total span{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.checkout-review-order .product-name{
+    text-align: left;
+}
+.checkout-review-order .product-total{
+    text-align: right;
+}
+.checkout-review-order .product-total input[type="radio"]{
+    margin-left: 5px;
+}
+.checkout-review-order td{
+    padding: 15px 0px;
+}
+.checkout-review-order .product-total.total_price span {
+	color: #329450;
+	font-size: 20px;
+	font-weight: bold;
+}
+.payment{
+    padding: 20px 0px;
+}
+.payment h6 {
+	text-transform: uppercase;
+	font-weight: bold;
+    margin-bottom: 15px;
+}
+.payment ul li {
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: #000;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+.payment ul li p {
+	text-transform: capitalize;
+	margin: -4px 0px 5px 0px;
+	color: rgba(0, 0, 0, 0.56);
+	font-size: 12px;
+}
+.payment p {
+	color: #000;
+	font-size: 16px;
+	/* line-height: 61px; */
+	font-style: italic;
+}
+.place-order{}
+.place-order input[type="submit"] {
+	width: 100%;
+	padding: 5px 0px;
+	background: #329450;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px;
+    transition: .9s;
+}
+.place-order input[type="submit"]:hover {
+    background-color: #d22b0f;
+}
+/* checkout area end */
 
 /* Footer area start */
 .about-area{}
