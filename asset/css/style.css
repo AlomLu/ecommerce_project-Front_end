@@ -9,7 +9,7 @@ a{
 ul{
     list-style: none;
 }
-h2, h3, h4{
+h2, h3, h4, h5{
     margin-bottom: 0;
 }
 img{
@@ -765,6 +765,52 @@ th{
 	text-align: center;
 }
 /* Login area end */
+
+/* Forget-pass area start */
+.forget-pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 40%;
+}
+.card-body{
+}
+.card-title {
+	border-bottom: 1px solid #ddd;
+	padding: 30px 0px;
+	margin-bottom: 0;
+}
+.card-text {
+	padding: 30px 0px;
+	border-bottom: 1px solid #ddd;
+}
+.forget-pass .card input {
+	margin: 30px 0px;
+	padding: 5px 0px 5px 2px;
+}
+.forget-pass .card input.form-control:focus{
+    outline: none;
+	box-shadow: none;
+	border-color: #2B2D42;
+    transition: all 0.3s ease;
+}
+.btn-group{
+    float: right;
+    padding-bottom: 40px;
+}
+.btn-group .btn.cancel {
+	margin-right: 10px;
+	padding: 5px 20px;
+	border-radius: 4px !important;
+}
+.btn-group .btn.search{
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+/* Forget-pass area end */
 
 /* Footer area start */
 .about-area{}
