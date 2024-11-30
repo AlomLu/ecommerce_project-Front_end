@@ -851,6 +851,65 @@ th{
 }
 /* Signup area end */
 
+/* Dashboard area start */
+.list-group a{
+    text-transform: capitalize;
+}
+.dashboard-area{
+    padding: 70px 0px;
+}
+.update-profile, 
+.address, 
+.change-password,
+.delete-account{
+    margin-left: 30px;
+}
+.update-profile h5, .order-list h5, 
+.address h5,
+.change-password h5,
+.delete-account h5 {
+	text-align: center;
+	padding: 10px 0px;
+	background-color: #2B2D42;
+	color: #fff;
+	margin: 0px 0px 40px 0px;
+}
+.update-profile .form-group, 
+.address .form-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.update-profile .form-group:last-of-type, 
+.address .form-group:last-of-type {
+	margin-bottom: 0px;
+	justify-content: flex-start;
+}
+.update-profile .form-group:last-of-type .form-inline:first-of-type, 
+.address .form-group:last-of-type .form-inline:first-of-type{
+	margin-right: 40px;
+}
+.update-profile .form-group.gender{
+    justify-content: flex-start;
+    margin-bottom: 0px;
+}
+.update-profile .form-group .form-inline, 
+.address .form-group .form-inline{
+    width: 30%;
+}
+.update-profile .form-check.male{
+   margin-right: 15px;
+}
+.form-select:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #000;
+}
+.change-password .form-group .form-inline{
+    width: 47%;
+}
+/* Dashboard area end */
+
 /* Footer area start */
 .about-area{}
 .single-box{}
